@@ -7,9 +7,6 @@ import ru.startandroid.training.di.Component.DaggerAppComponent;
 import ru.startandroid.training.di.module.CarModule;
 import ru.startandroid.training.di.module.EngineModule;
 
-/**
- * Created by root on 24.01.2017.
- */
 
 public class App extends Application {
     private static AppComponent mAppComponent;
@@ -20,6 +17,7 @@ public class App extends Application {
 
         mAppComponent = DaggerAppComponent.builder()
                 .carModule(new CarModule())
+                .engineModule(new EngineModule())
                 .build();
     }
 

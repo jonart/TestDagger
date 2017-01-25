@@ -21,6 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
         App.getAppComponent().inject(this);
 
-        mCar.makeCar("Lada");
+        mCar.makeCar("Lada", "1.6");
     }
 }

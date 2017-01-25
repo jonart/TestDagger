@@ -1,16 +1,17 @@
 package ru.startandroid.training;
 
-/**
- * Created by root on 24.01.2017.
- */
 
 public class Engine {
-    String modelEngine;
+    private String modelEngine;
 
     public Engine() {
     }
 
-    String getNameEngine(){
+    protected void setModelEngine(String modelEngine) {
+        this.modelEngine = modelEngine;
+    }
+
+    protected String getNameEngine(){
         return modelEngine;
     }
 }

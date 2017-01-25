@@ -4,10 +4,6 @@ import android.util.Log;
 
 import javax.inject.Inject;
 
-/**
- * Created by root on 24.01.2017.
- */
-
 public class Car {
 
     @Inject
@@ -16,7 +12,8 @@ public class Car {
     public Car(){
         App.getAppComponent().inject(this);
     }
-    void makeCar(String name){
-        Log.d("TAG", name + " " + mEngine.getNameEngine());
+    protected void makeCar(String carName, String engineName){
+        mEngine.setModelEngine(engineName);
+        Log.d("TAG", carName + " " + mEngine.getNameEngine());
     }
 }
